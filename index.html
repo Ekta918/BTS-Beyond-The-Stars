@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BTS | Beyond The Stars. An unofficial fan-made website celebrating seven hearts and one universe.">
+    <title>BTS | Beyond The Stars</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <noscript><style>.loader { display: none; }</style></noscript>
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- LOADER -->
+    <div class="loader" id="loader" role="status" aria-live="polite">
+        <span class="loader-star" aria-hidden="true">✦</span>
+        <p>Loading our universe...</p>
+    </div>
+
+    <!-- HEADER -->
+    <header class="site-header" id="siteHeader">
+        <a href="#home" class="logo" aria-label="BTS, back to top">BTS<span aria-hidden="true">✦</span></a>
+
+        <nav id="nav" aria-label="Main">
+            <a href="#home">Home</a>
+            <a href="#about">Our Story</a>
+            <a href="#members">The Seven</a>
+            <a href="#music">Music</a>
+            <a href="#journey">Journey</a>
+        </nav>
+
+        <a href="#army" class="nav-button">For ARMY ♡</a>
+
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="nav" aria-label="Open menu">☰</button>
+    </header>
+
+    <main id="main">
+
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <canvas class="starfield" id="starfield" aria-hidden="true"></canvas>
+
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <p class="hero-kicker">Seven hearts, one universe</p>
+
+                    <h1>
+                        <span class="h1-line">Beyond</span>
+                        <span class="h1-line">the <em>Stars.</em></span>
+                    </h1>
+
+                    <p class="hero-text">
+                        Seven different souls, one extraordinary journey.
+                        A little universe made of music, memories and love.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#about" class="primary-btn">Explore their world</a>
+                        <a href="#members" class="secondary-btn">Meet the seven</a>
+                    </div>
+
+                    <p class="hero-note"><span aria-hidden="true">✦</span> Forever connected, beyond distance.</p>
+                </div>
+
+                <div class="hero-visual">
+                    <span class="arch-echo" aria-hidden="true"></span>
+
+                    <figure class="photo hero-photo">
+                        <img src="images/bts-group.jpg" alt="BTS group photo" fetchpriority="high">
+                        <figcaption class="credit">Photo credit to the original owner.</figcaption>
+                    </figure>
+
+                    <div class="hero-card">
+                        <h2>BTS</h2>
+                        <p>Bangtan Sonyeondan</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="scroll-cue" href="#about">
+                <span>Scroll</span>
+                <i aria-hidden="true"></i>
+            </a>
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="about section" id="about">
+
+            <div class="section-heading">
+                <h2>More than just seven.</h2>
+                <p>A journey that became a home for millions.</p>
+            </div>
+
+            <div class="about-layout">
+
+                <div class="about-image">
+                    <figure class="photo about-photo">
+                        <img src="images/bts-about.jpg" alt="BTS" loading="lazy">
+                        <figcaption class="credit">Photo credit to the original owner.</figcaption>
+                    </figure>
+                    <span class="image-sticker">♡ Borahae</span>
+                </div>
+
+                <div class="about-text">
+                    <h3>Different dreams.<br>One beautiful destiny.</h3>
+
+                    <p>
+                        BTS, also known as Bangtan Sonyeondan, is a South Korean
+                        group whose music has connected people across languages,
+                        cultures and generations.
+                    </p>
+
+                    <p>
+                        Through their songs, performances and stories, they
+                        remind us to believe in ourselves, embrace who we are
+                        and keep moving forward.
+                    </p>
+
+                    <dl class="about-facts">
+                        <div>
+                            <dt>Members</dt>
+                            <dd>7</dd>
+                        </div>
+                        <div>
+                            <dt>Universe</dt>
+                            <dd>1</dd>
+                        </div>
+                        <div>
+                            <dt>Memories</dt>
+                            <dd>∞</dd>
+                        </div>
+                    </dl>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- MEMBERS -->
+        <section class="members section" id="members">
+
+            <div class="section-heading">
+                <h2>The Seven.</h2>
+                <p>Seven unique personalities, together as one.</p>
+            </div>
+
+            <!-- The seven stars of the Big Dipper, one for each member -->
+            <div class="sky-panel" id="skyPanel">
+                <svg class="constellation" id="constellation" viewBox="0 0 600 330" role="img" aria-label="Seven stars drawn as a constellation, one for each member"></svg>
+                <p class="sky-caption" id="skyCaption">Hover over a member to light up their star.</p>
+            </div>
+
+            <div class="member-grid" id="memberGrid">
+
+                <article class="member-card" style="--tint:#e6defa" data-star="0" data-role="The leader">
+                    <figure class="photo member-photo">
+                        <img src="images/rm.jpg" alt="RM" loading="lazy">
+                        <figcaption class="credit">Photo credit to the original owner.</figcaption>
+                    </figure>
+                    <div class="member-info">
+                        <p class="role">The leader</p>
+                        <h3>RM</h3>
+                        <p class="real-name">Kim Namjoon</p>
+                    </div>
+                </article>
+
+                <article class="member-card" style="--tint:#fbe2ec" data-star="1" data-role="The worldwide handsome">
+                    <figure class="photo member-photo">
+                        <img src="images/jin.jpg" alt="Jin" loading="lazy">
+                        <figcaption class="credit">Photo credit to the original owner.</figcaption>
+                    </figure>
+                    <div class="member-info">
+                        <p class="role">The worldwide handsome</p>
+                        <h3>Jin</h3>
+                        <p class="real-name">Kim Seokjin</p>
+                    </div>
+                </article>
+
+                <article class="member-card" style="--tint:#dfe8f7" data-star="2" data-role="The producer">
+                    <figure class="photo member-photo">
+                        <img src="images/suga.jpg" alt="SUGA" loading="lazy">
+                        <figcaption class="credit">Photo credit to the original owner.</figcaption>
+                    </figure>
+                    <div class="member-info">
+                        <p class="role">The producer</p>
+                        <h3>SUGA</h3>
+                        <p class="real-name">Min Yoongi</p>
+                    </div>
+                </article>
+
+                <article class="member-card" style="--tint:#fde9d6" data-star="3" data-role="The sunshine">
+                    <figure class="photo member-photo">
+                        <img src="images/jhope.jpg" alt="j-hope" loading="lazy">
+                        <figcaption class="credit">Photo credit to the original owner.</figcaption>
+                    </figure>
+                    <div class="member-info">
+                        <p class="role">The sunshine</p>
+                        <h3>j-hope</h3>
+                        <p class="real-name">Jung Hoseok</p>
+                    </div>
+                </article>
+
+                <article class="member-card" style="--tint:#f5dff2" data-star="4" data-role="The artist">
+                    <figure class="photo member-photo">
+                        <img src="images/jimin.jpg" alt="Jimin" loading="lazy">
+                        <figcaption class="credit">Photo credit to the original owner.</figcaption>
+                    </figure>
+                    <div class="member-info">
+                        <p class="role">The artist</p>
+                        <h3>Jimin</h3>
+                        <p class="real-name">Park Jimin</p>
+                    </div>
+                </article>
+
+                <article class="member-card" style="--tint:#dcebf2" data-star="5" data-role="The artistic soul">
+                    <figure class="photo member-photo">
+                        <img src="images/v.jpg" alt="V" loading="lazy">
+                        <figcaption class="credit">Photo credit to the original owner.</figcaption>
+                    </figure>
+                    <div class="member-info">
+                        <p class="role">The artistic soul</p>
+                        <h3>V</h3>
+                        <p class="real-name">Kim Taehyung</p>
+                    </div>
+                </article>
+
+                <article class="member-card" style="--tint:#e8e0f9" data-star="6" data-role="The golden maknae">
+                    <figure class="photo member-photo">
+                        <img src="images/jungkook.jpg" alt="Jungkook" loading="lazy">
+                        <figcaption class="credit">Photo credit to the original owner.</figcaption>
+                    </figure>
+                    <div class="member-info">
+                        <p class="role">The golden maknae</p>
+                        <h3>Jungkook</h3>
+                        <p class="real-name">Jeon Jungkook</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- MUSIC -->
+        <section class="music section" id="music">
+
+            <div class="section-heading">
+                <h2>Made of music.</h2>
+                <p>Every era has a story. Every album holds a memory.</p>
+            </div>
+
+            <div class="album-grid">
+
+                <article class="album-card">
+                    <div class="album-art">
+                        <span class="vinyl" aria-hidden="true"></span>
+                        <figure class="photo cover">
+                            <img src="images/love-yourself.jpg" alt="Love Yourself: Her album cover" loading="lazy">
+                            <figcaption class="credit">Photo credit to the original owner.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="album-info">
+                        <p class="year">2017</p>
+                        <h3>Love Yourself: Her</h3>
+                    </div>
+                </article>
+
+                <article class="album-card">
+                    <div class="album-art">
+                        <span class="vinyl" aria-hidden="true"></span>
+                        <figure class="photo cover">
+                            <img src="images/tear.jpg" alt="Love Yourself: Tear album cover" loading="lazy">
+                            <figcaption class="credit">Photo credit to the original owner.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="album-info">
+                        <p class="year">2018</p>
+                        <h3>Love Yourself: Tear</h3>
+                    </div>
+                </article>
+
+                <article class="album-card">
+                    <div class="album-art">
+                        <span class="vinyl" aria-hidden="true"></span>
+                        <figure class="photo cover">
+                            <img src="images/answer.jpg" alt="Love Yourself: Answer album cover" loading="lazy">
+                            <figcaption class="credit">Photo credit to the original owner.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="album-info">
+                        <p class="year">2018</p>
+                        <h3>Love Yourself: Answer</h3>
+                    </div>
+                </article>
+
+                <article class="album-card">
+                    <div class="album-art">
+                        <span class="vinyl" aria-hidden="true"></span>
+                        <figure class="photo cover">
+                            <img src="images/map-of-soul.jpg" alt="Map of the Soul: 7 album cover" loading="lazy">
+                            <figcaption class="credit">Photo credit to the original owner.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="album-info">
+                        <p class="year">2020</p>
+                        <h3>Map of the Soul: 7</h3>
+                    </div>
+                </article>
+
+                <article class="album-card">
+                    <div class="album-art">
+                        <span class="vinyl" aria-hidden="true"></span>
+                        <figure class="photo cover">
+                            <img src="images/be.jpg" alt="BE album cover" loading="lazy">
+                            <figcaption class="credit">Photo credit to the original owner.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="album-info">
+                        <p class="year">2020</p>
+                        <h3>BE</h3>
+                    </div>
+                </article>
+
+                <article class="album-card">
+                    <div class="album-art">
+                        <span class="vinyl" aria-hidden="true"></span>
+                        <figure class="photo cover">
+                            <img src="images/proof.jpg" alt="Proof album cover" loading="lazy">
+                            <figcaption class="credit">Photo credit to the original owner.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="album-info">
+                        <p class="year">2022</p>
+                        <h3>Proof</h3>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- JOURNEY -->
+        <section class="journey section" id="journey">
+
+            <div class="section-heading">
+                <h2>A journey through time.</h2>
+                <p>Little moments that became unforgettable memories.</p>
+            </div>
+
+            <div class="timeline" id="timeline">
+                <div class="timeline-line" aria-hidden="true"><span class="timeline-progress"></span></div>
+
+                <div class="timeline-item">
+                    <span class="timeline-year">2013</span>
+                    <span class="timeline-dot" aria-hidden="true"></span>
+                    <div class="timeline-content">
+                        <h3>The beginning</h3>
+                        <p>BTS made their official debut on June 13, 2013.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-year">2015</span>
+                    <span class="timeline-dot" aria-hidden="true"></span>
+                    <div class="timeline-content">
+                        <h3>The HYYH era</h3>
+                        <p>The Most Beautiful Moment in Life chapter began.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-year">2017</span>
+                    <span class="timeline-dot" aria-hidden="true"></span>
+                    <div class="timeline-content">
+                        <h3>A global connection</h3>
+                        <p>BTS received the Top Social Artist award at the Billboard Music Awards.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-year">2020</span>
+                    <span class="timeline-dot" aria-hidden="true"></span>
+                    <div class="timeline-content">
+                        <h3>Breaking records</h3>
+                        <p>Dynamite became their first English-language single.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-year">2022</span>
+                    <span class="timeline-dot" aria-hidden="true"></span>
+                    <div class="timeline-content">
+                        <h3>Proof of their journey</h3>
+                        <p>The anthology album Proof celebrated their musical history.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ARMY CORNER -->
+        <section class="army section" id="army">
+
+            <div class="army-box">
+                <div class="army-stars" aria-hidden="true">✦ ✧ ✦</div>
+
+                <h2>Leave a little love.</h2>
+
+                <p class="army-lead">
+                    Every ARMY has a memory, a favourite song or a message.
+                    What would you like to say?
+                </p>
+
+                <label class="sr-only" for="armyMessage">Your message to BTS and ARMY</label>
+                <textarea id="armyMessage" maxlength="180" placeholder="Write your little message here..."></textarea>
+
+                <div class="army-row">
+                    <span class="char-count" id="charCount">0 / 180</span>
+                    <button type="button" class="primary-btn" id="sendMessage">Send your message ♡</button>
+                </div>
+
+                <p class="message-status" id="messageStatus" role="status" aria-live="polite"></p>
+            </div>
+
+            <div class="wall" id="wall" hidden>
+                <div class="wall-head">
+                    <h3>The message wall</h3>
+                    <button type="button" class="text-btn" id="clearWall">Clear wall</button>
+                </div>
+                <ul class="note-wall" id="noteWall"></ul>
+                <p class="wall-hint">Messages are saved on this device only.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <a href="#home" class="footer-logo">BTS ✦</a>
+        <p class="footer-line">Seven hearts. One universe. Endless memories.</p>
+        <p class="footer-borahae">Borahae forever 💜</p>
+        <span class="footer-made">Made with ♡ by an ARMY</span>
+        <small>
+            Unofficial fan-made website. Not affiliated with BTS or BIGHIT MUSIC.
+            All photographs and album artwork belong to their respective owners.
+        </small>
+    </footer>
+
+    <button type="button" class="star-button" id="starButton" aria-label="Release stars">✦</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
